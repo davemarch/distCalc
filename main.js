@@ -26,21 +26,20 @@ Date.prototype.getWeek = function() {
 
   console.log((new Date()).getWeek());  // 52
     $weeksLeft.value = (53 - (new Date()).getWeek())
-  $weeksLeft.innerHTML = "Weeks of year remaining - " + $weeksLeft.value;
+    $weeksLeft.innerHTML = "Weeks of year remaining - " + `<p class='number'>` + $weeksLeft.value + '</p>';
 
 
   $targetMilesButton.addEventListener("click", function(event){
     event.preventDefault();
     $weeksLeft.style.visibility = "visible";
-    $miles.innerHTML = "Distance to date - " + $milesRidden.value;
+    $miles.innerHTML = "Distance to date - " + `<p class='number'>` + $milesRidden.value + '</p>';
     $averageNeeded.innerHTML = ($miles.innerHTML / $weeksLeft.innerHTML);
-    $targetMileOutput.innerHTML = 'Target distance - ' + $targetMiles.value;
+    $targetMileOutput.innerHTML = 'Target distance - ' + `<p class='number'>` + $targetMiles.value + '</p>';
     event.preventDefault();
-    $milesLeft.innerHTML = "Distance remaining - " + ($targetMiles.value - $milesRidden.value);
+    $milesLeft.innerHTML = "Distance remaining - " + `<p class='number'>` + ($targetMiles.value - $milesRidden.value) + '</p>';
     averagePerWeek = ($targetMiles.value - $milesRidden.value) / $weeksLeft.value;
     averagePerWeek = Math.round(averagePerWeek * 100) / 100;
-    $averageNeeded.innerHTML = "Average weekly distance to meet goal by end of year - " + averagePerWeek + ' per week';
-
+    $averageNeeded.innerHTML = "Average weekly distance to meet goal by end of year - " + `<p class='number'>` + averagePerWeek + '</p>' + ' per week';
   });
 
 

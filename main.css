@@ -24,7 +24,7 @@
     top: 0%;
     padding-top: 5%;
     position: relative;
-    height: 25%;
+    height: 30%;
     width: 100%;
     background-color: white;
 }
@@ -57,6 +57,7 @@ input[type=button], input[type=submit], input[type=reset] {
     width: 100%;
     background-color: #f7f7fa;
     padding-top: 5px;
+    color:#ed4a06;
 }
 
 .average-needed p {
@@ -64,7 +65,17 @@ input[type=button], input[type=submit], input[type=reset] {
     margin: 5px;
 }
 
+#average-needed {
+    margin-left : 5%;
+    margin-right : 5%;
+
+}
+
 #weeks-left {
     visibility: hidden;
+}
+
+.number {
+    color: black;
 }
 
