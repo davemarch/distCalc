@@ -6,16 +6,23 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
 <div class='container'>
+        <img id='logo' src="STRAVA-LOGO.png" alt="Strava Logo">
+
     <form class='YTD'id='YTD'>
-        Distance to date: 
-        <input type="number" name="milesRidden" id='milesRidden'>
-        <br>
-        Target Distance for 2020: 
-        <input type="number" name="targetMiles" id='targetMiles'>
-        <br>
-        <input id='targetMilesButton' type="button" value="Submit">
+        <wrapper class='form-wrapper' id='form-1'>
+            <label>Distance to date: </label>
+            <input type="number" name="milesRidden" id='milesRidden'><br>
+        </wrapper>
+        <wrapper class='form-wrapper' id='form-2'>
+            <label>Distance for 2020:</label> 
+            <input type="number" name="targetMiles" id='targetMiles'><br>
+        </wrapper>
+        <wrapper class='form-wrapper'>
+            <input id='targetMilesButton' type="button" value="Submit">
+        </wrapper>
     </form>
 
     <div class='average-needed' >
