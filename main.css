@@ -16,17 +16,21 @@
 
 #logo {
     width: 100vw;
-    padding: 10%;
-    max-height: 600px;
+    padding: 3%;
+    max-width: 600px;
 }
 
 .YTD {
     top: 0%;
     padding-top: 5%;
     position: relative;
-    height: 33%;
+    height: 25%;
     width: 100%;
     background-color: white;
+}
+
+.YTD div {
+    padding-top: 5px;
 }
 
 input[type=button], input[type=submit], input[type=reset] {
@@ -38,8 +42,6 @@ input[type=button], input[type=submit], input[type=reset] {
     margin: 50px 30px;
     cursor: pointer;
   }
-
-
 
 
 .weeks-left {
@@ -54,7 +56,12 @@ input[type=button], input[type=submit], input[type=reset] {
     height: 50%;
     width: 100%;
     background-color: #f7f7fa;
+    padding-top: 5px;
+}
 
+.average-needed p {
+    padding-top: 5px;
+    margin: 5px;
 }
 
 #weeks-left {
